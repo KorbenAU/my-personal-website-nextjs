@@ -1,9 +1,15 @@
-import Head from 'next/head';
-import Image from 'next/image';
+import HeroSectionBackground from '../components/HeroSection/HeroSectionBackground';
+import NavBar from '../components/NavBar/NavBar';
 import HeroSection from '../components/HeroSection/HeroSection';
 
 export default function Home() {
     return (
-        <HeroSection/>
+        <>
+            <div className={'h-screen w-screen'}>
+                <HeroSectionBackground/>
+                <HeroSection/>
+                <NavBar/>
+            </div>
+        </>
     );
 }
